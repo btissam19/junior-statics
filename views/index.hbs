@@ -98,21 +98,24 @@
           <div class="d-flex align-items-center justify-content-center">
             <img src="images/pic1 edited.png" class="d-block" alt="...">
           </div>
+          <div class="carousel-indicator d-lg-none">1/2</div>
         </div>
         <div class="carousel-item">
           <div class="d-flex align-items-center justify-content-center">
             <img src="images/pic 2.png" class="d-block" alt="...">
           </div>
+          <div class="carousel-indicator d-lg-none">1/2</div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="false"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+     <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+  
     </div>
 
     <style>
@@ -178,35 +181,39 @@
         <div class="main-title mt-5 mb-5 position-relative ">
           <button class="btn rounded-pill text-centre servecesbutton">Nos autres services</button>
         </div>
-  <div id="carouselExampleControls2"  class="carousel slide d-flex align-items-center justify-content-center" data-bs-ride="carousel">
+  <div id="carouselExampleControls2"  class="carousel slide d-flex align-items-center justify-content-center " data-bs-ride="carousel">
 
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex align-items-center justify-content-center">
-            <img src="images/app-development-banner_33099-1720.avif" class="d-block" alt="...">
+            <img src="images/appweb.jpg" class="d-block" alt="...">
           </div>
+          <div class="carousel-indicator d-lg-none">1/4</div>
         </div>
         <div class="carousel-item">
           <div class="d-flex align-items-center justify-content-center">
             <img src="images/cartoon-graphic-design-landing-page_52683-70881.avif" class="d-block" alt="...">
           </div>
+            <div class="carousel-indicator d-lg-none">2/4</div>
         </div>
          <div class="carousel-item">
           <div class="d-flex align-items-center justify-content-center">
             <img src="images/fb-content-creation.webp" class="d-block" alt="...">
           </div>
+           <div class="carousel-indicator d-lg-none">3/4</div>
         </div>
          <div class="carousel-item">
           <div class="d-flex align-items-center justify-content-center">
             <img src="images/Best-free-video-editing-software-AU-Capterra-Header.png" class="d-block" alt="...">
           </div>
+           <div class="carousel-indicator d-lg-none">4/4</div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <button class="carousel-control-prev  d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <button class="carousel-control-next  d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -221,18 +228,11 @@
     }
 }
 /* For larger screens */
-#carouselExampleControls2 .carousel-inner .carousel-item:first-child img {
-    max-height: 350px; /* Adjust this value to your preference */
-}
 
 /* For small screens */
-@media (max-width: 576px) {
-    #carouselExampleControls2 .carousel-inner .carousel-item:first-child img {
-        max-height: 150px; /* Adjust this value to your preference */
-    }
-}
 
-      #carouselExampleControls2 .carousel-inner .carousel-item img {
+
+  #carouselExampleControls2 .carousel-inner .carousel-item img {
     max-width: 600px; /* Adjust as per your preference */
     max-height: 500px; /* Adjust as per your preference */
     margin: auto; /* centers the image horizontally */
@@ -249,7 +249,7 @@
 
     </style>
 
-  <!---start footor-->
+ 
     <!---start get in touch-->
     <section id="getintouch">
     <div class="project    ">
@@ -280,30 +280,19 @@ the latest technology available in the market, simply contact Ensem-Engineering.
           </div>
         </div>
         <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
-
-          <form action="/contact" autocomplete="off">
+           <form action="/contact">
             <h3 class="title">Let Message</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
+              <input type="text" name="name" class="input" placeholder="Username" />
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
+              <input type="email" name="email" class="input" placeholder="Email" />
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
-              <span>Phone</span>
+              <input type="tel" name="phone" class="input"  placeholder="Phone"/>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
+              <textarea name="message" class="input" placeholder="write your Message here"></textarea>
             </div>
             <input type="submit" value="Send" class="btn" />
           </form>
@@ -312,47 +301,59 @@ the latest technology available in the market, simply contact Ensem-Engineering.
     </div>
     </div></section>
     <!---end get in touch-->
-    <section id="footer" class="footer">
-      <div class="pt-5 pb-5 text-md-start text-center">
+   <section id="footer" class="footer">
+    <div class="pt-5 pb-5 text-md-start text-center">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="info" style="margin-left:1px;">
-                <img src="images/logo with bg.png" class="img-fluid footorlogo">
-                <div class="copyright mt-5">
-                  Created By<span style="color:#cb062a;font-weight:400;"> &hearts; Ensem engennering</span>
-                  <div>&copy; 2022-2023 </div>
+            <div class="row justify-content-between"> <!-- Added justify-content-between -->
+
+                <!-- Logo and Social Section -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="info">
+                        <img src="images/logo with bg.png" class="img-fluid footorlogo" alt="Logo">
+
+                        <!-- Copyright Section -->
+                        <div class="copyright mt-5">
+                            Created By <span style="color:#cb062a;font-weight:400;">&hearts; Ensem engennering</span>
+                            <div>&copy; 2022-2023</div>
+                        </div>
+                    </div>
                 </div>
-                 <a href="https://www.linkedin.com/in/ibtissam-ech-chaibi-57bb9b246/" class="btn rounded-pill m"></a>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 ">
-             <div class="links"style="margin-left:2px;">
-              <div class=" ">
-              <h5 style="margin-left:2px;">infos</h5>
-              <ul class="list-unstyled lh-lg">
-               <li><a href="#landing">Acceuil</a></li>
-              <li>
-                <a href="#about_us" class="">Nous connaître</a>
-              </li>
-              <li>
-                <a href="#learn">services</a>
-              </li>
-              </ul>
-              </div>
-             </div>
-            </div>
-             <div class="col-md-6 col-lg-4">
-              <div class="contact">
-                <h5 > copyright</h5>
-                <p class=" mb-4 mt-4 ">
-               <div>&copy; 2022-2023 all right reserved to ensem-engineering </div></p>
-              </div>
-             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+                <!-- Newsletter Section -->
+                <div class="col-md-6 col-lg-8 d-flex align-items-center justify-content-end"> <!-- Removed the offset classes -->
+                    <form action="/singup" id="">
+                        <div class="row align-items-center">
+
+                            <!-- Newsletter Text -->
+                            <div class="col-auto mb-0">
+                                <p class="pt-2 mb-0">
+                                    <strong>Sign up for our newsletter</strong>
+                                </p>
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="col-auto">
+                                <div class="input-container">
+                                    <input type="email" name="email" class="input" placeholder="Email" />
+                                    <label for="">Email</label>
+                                </div>
+                            </div>
+                            <!-- Subscribe Button -->
+                            <div class="col-auto" id="subscrib">
+                                <input type="submit" value="Subscribe" class="btn rounded-pill"/>
+                            </div>
+
+                        </div> <!-- End of inner row -->
+                    </form>
+                </div>
+
+            </div> <!-- End of main row -->
+        </div> <!-- End of container -->
+    </div>
+</section>
+
+
+    
   <!--end  footor-->
  <script src="JS/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

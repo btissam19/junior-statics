@@ -22,21 +22,7 @@
     justify-content: center;
     align-items: center;
 }
-.navbar .navbar-nav .nav-item .main-btn{
-    background-color:#cb062a ;
-    color:#f8f3f3;
-    height: 50px;
-    width: 90px;
-    padding: 8px;
-    border:solid 1px #cb062a;
-    border-radius: 5px;
-    margin-left: 3px;
-    margin-top: 3px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .button{
     color: #cb062a ;
     background-color:#cb062a ;
@@ -230,63 +216,30 @@ margin-top:5px;
 /*end getintouche*/
 /*start footer*/
 
-.footer{
-    background-color:#f8f3f3 
-}
-.footer .footorlogo{
-    height: 70px;
-    display: block;
-}
-.footer a{
-    text-decoration: none;
-    color:black;
-}
-.footer a:hover{
-    color:  #cb062a ; 
-}
-.footer .row .links{
-    margin-left: 2px;
-}
-.footer .row .contact  .main-btn{
-background-color:#cb062a ;
-color:#f8f3f3;
-height: 50px;
-width: 300px;
-font-weight: 600;
-border:solid 1px #cb062a;
-border-radius: 5px;
-margin-top: 1px;
-text-align: center;
-margin-left: 0px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.footer .row .contact  .main-btn:hover{
-    background-color: transparent;
-     border: 2px solid #cb062a;
-     color:#cb062a;
-}
+
+
 /*end footer*/
 .form {
-    width: 100%;
-    max-width: 820px;
-    height:500px;
-    background-color:#cb062a;
-    border-radius: 10px;
-    z-index: 1000;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-    border: #cb062a 2px solid;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 820px;
+  height: auto; /* I changed this from 500px to auto to allow the content to determine the height. */
+  background-color: #cb062a;
+  border-radius: 10px;
+  z-index: 1000;
+  overflow: hidden;
+  margin: auto;
+  border: #cb062a 2px solid;
+}
+
   
   .contact-form {
     background-color: #f8f3f3;
     position: relative;
     border: #cb062a 2px solid ;
   }
+  
   
   
   
@@ -343,57 +296,29 @@ align-items: center;
     overflow-y: auto;
   }
   
-  .input-container label {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
+  .input-container input::placeholder {
     padding: 0 0.4rem;
     color: black;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600px;
     pointer-events: none;
-    z-index: 1000;
-    transition: 0.5s;
   }
   
-  .input-container.textarea label {
-    top: 1rem;
-    transform: translateY(0);
-  }
-  .input-container span {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    transform: translateY(-50%);
-    font-size: 0.8rem;
+  .input-container.textarea ::placeholder{
     padding: 0 0.4rem;
-    color: transparent;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600px;
     pointer-events: none;
-    z-index: 500;
+   
   }
-  
-  .input-container span:before,
-  .input-container span:after {
-    content: "";
-    position: absolute;
-    width: 10%;
-    opacity: 0;
-    transition: 0.3s;
-    height: 5px;
-    background-color: #cb062a;
-    top: 50%;
-    transform: translateY(-50%);
-    border: #cb062a 2px solid;
-  }
-  
-  .input-container span:before {
+  /* .input-container span:before {
     left: 50%;
   }
   
   .input-container span:after {
     right: 50%;
-  }
+  } */
   
   .input-container.focus label {
     top: 0;
@@ -434,81 +359,102 @@ align-items: center;
     font-weight: 600;
 }
 @media (max-width: 850px) {
-    .form {
-      grid-template-columns: 1fr;
-    }
+  /* Removed grid-template-columns: 1fr; */
   
-    .contact-info:before {
-      bottom: initial;
-      top: -75px;
-      right: 65px;
-      transform: scale(0.95);
-    }
-  
-    .contact-form:before {
-      top: -13px;
-      left: initial;
-      right: 70px;
-    }
-  
-    .square {
-      transform: translate(140%, 43%);
-      height: 350px;
-    }
-  
-    .big-circle {
-      bottom: 75%;
-      transform: scale(0.9) translate(-40%, 30%);
-      right: 50%;
-    }
-  
-    .text {
-      margin: 1rem 0 1.5rem 0;
-    }
-  
-    .social-media {
-      padding: 1.5rem 0 0 0;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .project {
-      padding: 1.5rem;
-    }
-  
-    .contact-info:before {
-      display: none;
-    }
-  
-    .square,
-    .big-circle {
-      display: none;
-    }
-  
-    form,
-    .contact-info {
-      padding: 1.7rem 1.6rem;
-    }
-  
-    .text,
-    .information,
-    .social-media p {
-      font-size: 0.8rem;
-    }
-  
-    .title {
-      font-size: 1.15rem;
-    }
-  
-  
-  
-    .input {
-      padding: 0.45rem 1.2rem;
-    }
-  
-    #getintouch .btn {
-      padding: 0.45rem 1.2rem;
-    }
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
   }
 
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info {
+      display: none !important;
+  }
+
+  .form {
+      grid-template-columns: 1fr !important; 
+  }
+
+  .contact-form {
+      width: 100% !important;
+      border: none; /* Optional: If you don't want the border around the form on small screens */
+  }
+}
+@media (min-width: 481px) and (max-width: 850px) {
+  .contact-info {
+      display: none;
+  }
+
+  .form {
+      grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+      width: 100%;
+  }
+}
+
+  .carousel-indicator {
+    position: absolute;
+    top: 10px;  /* Margin from the top */
+    right: 10px;  /* Margin from the right */
+    background-color: rgba(0, 0, 0, 0.7);  /* Slightly opaque background for better visibility */
+    color: white;
+    padding: 2px 8px;  /* Adjusted padding for a sleeker look */
+    border-radius: 15px;  /* Rounded corners */
+    font-size: 12px;  /* Smaller font size for a sleek look */
+    z-index: 10;
+}
+
+#subscrib.btn{
+  background-image: linear-gradient(to left, #B0F3F1 , #FFCFDF);;
+  color:#cb062a;
+  height: 50px;
+  width: 100px;
+  font-weight: 600;
+  border:solid 1px #cb062a;
+  border-radius: 5px;
+  margin-top:5px;
+  }
+
+
+
+    .footer{
+      background-color:#f8f3f3 
+  }
+  .footer .footorlogo{
+      height: 70px;
+      display: block;
+  }
   
+
+#footer .btn{
+  background-color:#cb062a ;
+  color:#f8f3f3;
+  height: 50px;
+  width: 90px;
+  padding: 8px;
+  font-weight:600;
+  border:solid 1px #cb062a;
+  border-radius: 3px;
+  margin-left: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer  .btn:hover{
+  background-color: transparent;
+  border: 2px solid #cb062a;
+  color:#cb062a;
+}
