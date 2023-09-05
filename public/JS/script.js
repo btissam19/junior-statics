@@ -110,16 +110,15 @@ function updateCarouselIndicator2() {
       }
   });
 }
-let form =document.getElementsByTagName("form")
-for( let i=0;i<=form.length;i++){
-  form[i].addEventListener('submit', function(e) {
-    e.preventDefault(); 
-    let inputs = form[i].querySelectorAll('input, textarea');
-    inputs.forEach(function(input) {
-      if(input.value!=="Send" && input.value!=="Subscribe")
-        input.value = '';
-    });
-});
+// let form =document.getElementsByTagName("form")
+// for( let i=0;i<=form.length;i++){
+//   form[i].addEventListener('submit', function(e) {
+//     let inputs = form[i].querySelectorAll('input, textarea');
+//     inputs.forEach(function(input) {
+//       if(input.value!=="Send" && input.value!=="Subscribe")
+//         input.value = '';
+//     });
+// });
 
 
 }
