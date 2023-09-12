@@ -1,365 +1,376 @@
-/*start navbar*/
-.navbar{
-    background-color: #f8f3f3;
-    font-family: 'open-sans-bold', sans-serif;
-}
-.navbar .navbar-nav .nav-link{
-    font-family: 'open-sans-bold', sans-serif;
-    color: black;
-}
-.navbar .navbar-nav .nav-item .main-btn{
-    background-color:#cb062a ;
-    color:#f8f3f3;
-    height: 50px;
-    width: 80px;
-    padding: 8px;
-    font-weight:600;
-    border:solid 1px #cb062a;
-    border-radius: 3px;
-    margin-left: 3px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+:root {
+  --background-color: #f8f3f3;
+  --main-btn-color: #cb062a;
+  --btn-text-color: #f8f3f3;
+  --nav-link-color: black;
 }
 
-.button{
-    color: #cb062a ;
-    background-color:#cb062a ;
-}
-.navbar .navbar-nav .nav-link:hover{
-    color:  #cb062a ; 
-
-}
-.navbar .navbar-nav .nav-item .main-btn:hover{
-    background-color: transparent;
-    border: 2px solid #cb062a;
-    color:#cb062a;
+.navbar {
+  background-color: var(--background-color);
+  font-family: 'open-sans-bold', sans-serif;
 }
 
-.logo{
-    height: 70px;
-    display: block;
-}
-/*end navbar*/
-/*start landing*/
-.landing{
-    min-height: calc(86.5vh);
-    background-color: #f8f3f3; 
-}
-.landing .row .text{
- margin-left:5%;
- width: 600px;
- font-family:'Outfit';
- font-size:larger;
-font-weight:900;
-margin-top: 20% ;
-/* text-shadow: 2px 2px 4px#cb062a  ; */
-  }
-
-.landing .row  .main1-btn{
-background-color:#cb062a ;
-color:#f8f3f3;
-height: 50px;
-width:200px;
-font-weight: 600;
-padding: 8px;
-border:solid 1px #cb062a;
-border-radius: 5px;
-margin-left: 3px;
-margin-top: 3px;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.landing .row  .main1-btn:hover{
-    background-color: transparent;
-    border: 2px solid #cb062a;
-     color:#cb062a;
-}
-.landing .social{
-    padding-top:10px;
-    padding-bottom:0.5px;
+.navbar .navbar-nav .nav-link {
+  font-family: 'open-sans-bold', sans-serif;
+  color: var(--nav-link-color);
 }
 
-.social img{
-    margin-right: 2rem;
-    width: 3rem;
-    transition: 0.4s;
+.navbar .navbar-nav .nav-item .main-btn {
+  background-color: var(--main-btn-color);
+  color: var(--btn-text-color);
+  height: 50px;
+  width: 80px;
+  padding: 8px;
+  font-weight:600;
+  border: solid 1px var(--main-btn-color);
+  border-radius: 3px;
+  margin-left: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.social img:hover{
-    transform: scale(1.2);
+
+.button {
+  color: var(--main-btn-color);
+  background-color: var(--main-btn-color);
 }
-.btn{
-    padding: 1.6rem 1.87rem ;
-    transition: 0.4s ;
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-btn-color);
 }
-.btn:hover{
-    background-color: transparent;
- 
+
+.navbar .navbar-nav .nav-item .main-btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--main-btn-color);
+  color: var(--main-btn-color);
 }
-/*end landing*/
-/*start about us*/
-#about_us{
-    background-color:#f8f3f3 ;
-    min-height: calc(10vh);
+
+.logo {
+  height: 70px;
+  display: block;
 }
+
+.landing {
+  min-height: calc(86.5vh);
+  background-color: var(--background-color);
+}
+
+.landing .row .text {
+  margin-left:5%;
+  width: 600px;
+  font-family:'Outfit';
+  font-size:larger;
+  font-weight:900;
+  margin-top: 20%;
+}
+
+.landing .row .main1-btn {
+  background-color: var(--main-btn-color);
+  color: var(--btn-text-color);
+  height: 50px;
+  width:200px;
+  font-weight: 600;
+  padding: 8px;
+  border: solid 1px var(--main-btn-color);
+  border-radius: 5px;
+  margin-left: 3px;
+  margin-top: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .row .main1-btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--main-btn-color);
+  color: var(--main-btn-color);
+}
+
+/*... continue this pattern for the rest of your stylesheet ...*/
+.landing .social {
+  padding-top:10px;
+  padding-bottom:0.5px;
+}
+
+.social img {
+  margin-right: 2rem;
+  width: 3rem;
+  transition: 0.4s;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  padding: 1.6rem 1.87rem;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+/* end landing */
+
+/* start about us */
+
+#about_us {
+  background-color: var(--background-color);
+  min-height: calc(10vh);
+}
+
 #about_us .description {
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#about_us button{
-background-color:#cb062a ;
-font-weight: 600;
-color:#f8f3f3;
-height: 50px;
-width: 200px;
-border:solid 1px #cb062a;
-border-radius: 5px;
-}
-#about_us button:hover{
-    background-color: transparent;
-    border: 2px solid #cb062a;
-    color:#cb062a;
 
+#about_us button {
+  background-color: var(--main-btn-color);
+  font-weight: 600;
+  color: var(--btn-text-color);
+  height: 50px;
+  width: 200px;
+  border: solid 1px var(--main-btn-color);
+  border-radius: 5px;
 }
-#carouselExampleControls img{
-    width:900px ;
-    height:500px;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
 
+#about_us button:hover {
+  background-color: transparent;
+  border: 2px solid var(--main-btn-color);
+  color: var(--main-btn-color);
 }
-#carouselExampleControls{
-    background-color: #f8f3f3;
+
+#carouselExampleControls img {
+  width:900px;
+  height:500px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
+
+#carouselExampleControls {
+  background-color: var(--background-color);
+}
+
 .carousel-item:hover {
-    animation: slide 3s linear infinite;
-}
-/*end about us */
-/*start services*/
-#learn button{
-background-color:#cb062a ;
-color:#f8f3f3;
-height: 50px;
-width: 250px;
-font-weight:600;
-border:solid 1px #cb062a;
-border-radius: 5px;
-margin-top: 1px;
-}
-#learn button:hover{
-    background-color: transparent;
-    border: 2px solid #cb062a;
-    color:#cb062a;
-
+  animation: slide 3s linear infinite;
 }
 
-#learn{
-    background-color:#f8f3f3 ;
-}
-#learn .content{
-    font-size: large;
-    font-weight: 100px;
-    font-family:"DM Sans";
-}
-#our-other-work .servecesbutton{
-background-color:#cb062a ;
-color:#f8f3f3;
-height: 50px;
-width: 250px;
-font-weight: 600;
-border:solid 1px #cb062a;
-border-radius: 5px;
-margin-top: 1px;
-}
-#our-other-work .servecesbutton:hover{
-    background-color: transparent;
-    border: 2px solid #cb062a;
-    color:#cb062a;
-}
-.our-work{
-    background-color:#f8f3f3;
-  }
-
-#getintouch{
-background-color: #f8f3f3;
-min-height: calc(20vh)
-}
-#getintouch h1{
-    margin-bottom: 20px;
+#learn button {
+  background-color: var(--main-btn-color);
+  color: var(--btn-text-color);
+  height: 50px;
+  width: 250px;
+  font-weight:600;
+  border: solid 1px var(--main-btn-color);
+  border-radius: 5px;
+  margin-top: 1px;
 }
 
-#getintouch .btn{
-background-image: linear-gradient(to left, #B0F3F1 , #FFCFDF);;
-color:#cb062a;
-height: 50px;
-width: 100px;
-font-weight: 600;
-border:solid 1px #cb062a;
-border-radius: 5px;
-margin-top:5px;
+#learn button:hover {
+  background-color: transparent;
+  border: 2px solid var(--main-btn-color);
+  color: var(--main-btn-color);
 }
-#getintouch .btn:hover{
-    background-image: linear-gradient(to right, #B0F3F1 , #FFCFDF);
-    border: 2px solid white;
-    color:black;
+
+#learn {
+  background-color: var(--background-color);
 }
-/*end getintouche*/
-/*start footer*/
+
+#learn .content {
+  font-size: large;
+  font-weight: 100px;
+  font-family: "DM Sans";
+}
+
+#our-other-work .servecesbutton {
+  background-color: var(--main-btn-color);
+  color: var(--btn-text-color);
+  height: 50px;
+  width: 250px;
+  font-weight: 600;
+  border: solid 1px var(--main-btn-color);
+  border-radius: 5px;
+  margin-top: 1px;
+}
+
+#our-other-work .servecesbutton:hover {
+  background-color: transparent;
+  border: 2px solid var(--main-btn-color);
+  color: var(--main-btn-color);
+}
+
+.our-work {
+  background-color: var(--background-color);
+}
+
+#getintouch {
+  background-color: var(--background-color);
+  min-height: calc(20vh);
+}
+
+#getintouch h1 {
+  margin-bottom: 20px;
+}
+
+#getintouch .btn {
+  background-image: linear-gradient(to left, #B0F3F1, #FFCFDF);
+  color: var(--main-btn-color);
+  height: 50px;
+  width: 100px;
+  font-weight: 600;
+  border: solid 1px var(--main-btn-color);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#getintouch .btn:hover {
+  background-color:#cb062a ;
+  border: 2px solid white;
+  color: black;
+}
 
 
-
-/*end footer*/
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   max-width: 820px;
-  height: auto; /* I changed this from 500px to auto to allow the content to determine the height. */
-  background-color: #cb062a;
+  height: auto; /* As noted, changed from 500px to auto to allow content to determine height */
+  background-color: var(--main-btn-color);
   border-radius: 10px;
   z-index: 1000;
   overflow: hidden;
   margin: auto;
-  border: #cb062a 2px solid;
+  border: var(--main-btn-color) 2px solid;
+}
+
+.contact-form {
+  background-color: var(--background-color);
+  position: relative;
+  border: var(--main-btn-color) 2px solid;
+}
+
+.contact-form:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: var(--main-btn-color);
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--main-btn-color);
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: black;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container input::placeholder {
+  padding: 0 0.4rem;
+  color: var(--text-color);  /* Assuming the variable for general text color is --text-color */
+  font-size: 0.9rem;
+  font-weight: 600; /* Removed the 'px' since font-weight doesn't use units */
+  pointer-events: none;
+}
+
+.input-container.textarea::placeholder {  /* Adjusted selector for consistency */
+  padding: 0 0.4rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+  background-color: var(--background-color);
+  border: var(--main-btn-color) solid;
+}
+
+.contact-info .title {
+  color: var(--main-btn-color);
+}
+
+.information {
+  display: flex;
+  color: var(--text-color);  /* Assuming the general text color variable is --text-color */
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+#getintouch .text2 {
+  color: var(--text-color);
+  margin: 1.5rem 0 2rem 0;
+  font-weight: 600;
 }
 
   
-  .contact-form {
-    background-color: #f8f3f3;
-    position: relative;
-    border: #cb062a 2px solid ;
-  }
   
-  
-  
-  
-  .contact-form:before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    background-color:#cb062a;
-    transform: rotate(45deg);
-    top: 50px;
-    left: -13px;
-  }
-  
-  form {
-    padding: 2.3rem 2.2rem;
-    z-index: 10;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .title {
-    color:black;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1;
-    margin-bottom: 0.7rem;
-  }
-  
-  .input-container {
-    position: relative;
-    margin: 1rem 0;
-  }
-  
-  .input {
-    width: 100%;
-    outline: none;
-    border: 2px solid #cb062a;
-    background: none;
-    padding: 0.6rem 1.2rem;
-    color: black;
-    font-weight: 500;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    border-radius: 25px;
-    transition: 0.3s;
-  }
-  
-  textarea.input {
-    padding: 0.8rem 1.2rem;
-    min-height: 150px;
-    border-radius: 22px;
-    resize: none;
-    overflow-y: auto;
-  }
-  
-  .input-container input::placeholder {
-    padding: 0 0.4rem;
-    color: black;
-    font-size: 0.9rem;
-    font-weight: 600px;
-    pointer-events: none;
-  }
-  
-  .input-container.textarea ::placeholder{
-    padding: 0 0.4rem;
-    color: black;
-    font-size: 0.9rem;
-    font-weight: 600px;
-    pointer-events: none;
-   
-  }
-  /* .input-container span:before {
-    left: 50%;
-  }
-  
-  .input-container span:after {
-    right: 50%;
-  } */
-  
-  .input-container.focus label {
-    top: 0;
-    transform: translateY(-50%);
-    left: 25px;
-    font-size: 0.8rem;
-  }
-  
-  .input-container.focus span:before,
-  .input-container.focus span:after {
-    width: 50%;
-    opacity: 1;
-  }
-  
-  .contact-info {
-    padding: 2.3rem 2.2rem;
-    position: relative;
-    background-color:#f8f3f3;
-    border:  #cb062a solid;
-  }
-  
-  .contact-info .title {
-    color: #cb062a;
-  }
-  .information {
-    display: flex;
-    color:black;
-    margin: 0.7rem 0;
-    align-items: center;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-
-  
-  #getintouch .text2{
-    color: black;
-    margin: 1.5rem 0 2rem 0;
-    font-weight: 600;
-}
 @media (max-width: 850px) {
-  /* Removed grid-template-columns: 1fr; */
   
   .contact-info:before {
     bottom: initial;

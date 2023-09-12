@@ -1,4 +1,5 @@
 const Contact = require('../models/Contact');
+const db=require('../database/mongodb')
 
 const contactForm = async (req, res) => {
     const data = {
