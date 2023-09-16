@@ -1,6 +1,5 @@
 const mongoose=require('mongoose')
 const validator = require('validator');
-const db=require('../database/mongodb')
 const userSchema= new mongoose.Schema({
     email: {
         type: String,

@@ -1,5 +1,6 @@
 const Contact = require('../models/Contact');
-const db=require('../database/mongodb')
+const connectDB=require('../database/mongodb')
+require('dotenv').config
 
 const contactForm = async (req, res) => {
     const data = {
@@ -10,8 +11,11 @@ const contactForm = async (req, res) => {
     }
 
     try {
+       
         await Contact.insertMany([data]);
-        res.redirect('/');
+        console.log('Success!!!!')
+        return res.redirect('/');
+
     } catch (e) {
         console.error(e);
         res.status(500).send('An error occurred while processing the form.');

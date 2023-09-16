@@ -1,3 +1,6 @@
+require('dotenv').config()
+const connectDB=require('./database/mongodb')
+const port=process.env.PORT||2000
 const express=require('express')
 const app=express()
 const hbs = require('hbs');
@@ -11,7 +14,15 @@ app.use('/singup',newsLetter)
 app.get('/', (req, res) => {
     res.render('index');
 });
+const Starter= async ()=>{
+    try {
+        await connectDB(process.env.MONGO_URL)
+        app.listen(port, () => {
+            console.log(`Server started on <http://localhost:${port}>`);
+        });
+    } catch (error) {
+       console.log(error); 
+    }
+}
+Starter()
 
-app.listen(3000, () => {
-    console.log('Server started on <http://localhost:3000>');
-});
